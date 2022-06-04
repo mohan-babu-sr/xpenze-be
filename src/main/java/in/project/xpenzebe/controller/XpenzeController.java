@@ -62,7 +62,7 @@ public class XpenzeController {
     {
         try {
             xpenzeService.updateXpenze(id,xpenze);
-            return new ResponseEntity<>("Updated movie with id "+id+"", HttpStatus.OK);
+            return new ResponseEntity<>("Updated xpenze with id "+id+"", HttpStatus.OK);
         }
         catch(ConstraintViolationException e)
         {
